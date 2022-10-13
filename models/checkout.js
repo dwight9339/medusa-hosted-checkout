@@ -31,7 +31,8 @@ exports.CheckoutStatus = CheckoutStatus;
 var Checkout = (_dec = (0, _typeorm.Entity)(), _dec2 = (0, _typeorm.Column)({
   type: "varchar"
 }), _dec3 = Reflect.metadata("design:type", String), _dec4 = (0, _typeorm.Column)({
-  type: "enum"
+  type: "enum",
+  "enum": CheckoutStatus
 }), _dec5 = Reflect.metadata("design:type", typeof CheckoutStatus === "undefined" ? Object : CheckoutStatus), _dec6 = (0, _typeorm.BeforeInsert)(), _dec7 = Reflect.metadata("design:type", Function), _dec8 = Reflect.metadata("design:paramtypes", []), _dec(_class = (_class2 = /*#__PURE__*/function (_BaseEntity) {
   (0, _inherits2["default"])(Checkout, _BaseEntity);
   var _super = _createSuper(Checkout);
